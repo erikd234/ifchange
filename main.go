@@ -110,12 +110,7 @@ func main() {
 				return
 			}
 		}
-	}() // run the cmd the first time
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
-	}
-
+	}() 
 	// Wait for a signal
 	sig := <-sigChan
 	fmt.Printf("Received signal: %s. Exiting...\n", sig)
@@ -165,7 +160,6 @@ func runCmdWithContext(ctx context.Context, cmd string) (*exec.Cmd, error) {
 }
 
 // sends files change signal to a channel
-// I dont need a channel but lets do it anyway
 // return true when files update
 func areFiledUpdated(lastModTime time.Time, dir string, regex *regexp.Regexp) (bool, error) {
 	isModded := false
