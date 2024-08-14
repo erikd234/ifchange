@@ -12,7 +12,7 @@ Here's a README for your Go CLI application:
 ## Installation
 
 To install `ifchange`, you can use the following one-liner:
-(you need Golang installed. [Install go here](https://go.dev/doc/install)
+(you need Golang installed.) [Install go here](https://go.dev/doc/install)
 
 ```bash
 go install github.com/erikd234/ifchange@latest
