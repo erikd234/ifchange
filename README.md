@@ -6,8 +6,8 @@ Here's a README for your Go CLI application:
 
 `ifchange` is a lightweight CLI tool written in Go that watches a directory for file changes and runs a specified command whenever a change is detected. It's perfect for automating tasks like building and testing code whenever files are updated.
 
-1. There are many hot loaders for various languages, Go doesnt have one. 
-2. Other CLI tools are really complex. this thing is just one file and has two commands, directory and the cmd to run.
+1. There are many hot loaders for various languages, Go doesnt have one.
+2. Other CLI tools are really complex. this thing is just one file and has a few commands.
 
 ## Installation
 
@@ -28,6 +28,7 @@ ifchange -dir <directory> -cmd "<command>"
 
 - `-dir`: Specifies the directory to watch. Defaults to the current directory (`./`) if not provided.
 - `-cmd`: The command to execute whenever a file change is detected.
+- `-only`: Regex file match. If you only wanted to do .go files do `-only ".go"`.
 
 ### Example
 
