@@ -23,12 +23,12 @@ Make sure your `GOPATH/bin` is in your `PATH` to easily run the `ifchange` comma
 ## Usage
 
 ```bash
-ifchange -dir <directory> -cmd "<command>"
+ifchange -dir <directory> -cmd "<command>" -only "<regex expression>"
 ```
 
-- `-dir`: Specifies the directory to watch. Defaults to the current directory (`./`) if not provided.
+- `-dir`: OPTIONAL: Specifies the directory to watch. Defaults to the current directory (`./`) if not provided.
 - `-cmd`: The command to execute whenever a file change is detected.
-- `-only`: Regex file match. If you only wanted to do .go files do `-only ".go"`.
+- `-only`: OPTIONAL: Regex file match. If you only wanted to do .go files do `-only ".go"`.
 
 ### Example
 
